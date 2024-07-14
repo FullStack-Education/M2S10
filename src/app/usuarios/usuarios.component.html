@@ -1,0 +1,9 @@
+<div class="usuarios">
+  <div class="pesquisa">
+    <input type="text" [(ngModel)]="textoPesquisa">
+    <button (click)="pesquisar()"> Pesquisar </button>
+  </div>
+  <div class="cards">
+    <app-card *ngFor="let usuario of listagemUsuariosPesquisa" [elemento]="usuario"></app-card>
+  </div>
+</div>

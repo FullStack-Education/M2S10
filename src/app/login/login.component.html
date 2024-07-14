@@ -1,0 +1,27 @@
+<div class="login">
+  <!-- Exemplo formulário Template Driven -->
+  <form #atividadeLogin="ngForm">
+    <fieldset>
+      <label>E-mail</label>
+      <input
+        type="email"
+        [(ngModel)]="login.email"
+        #email="ngModel"
+        [ngModelOptions]="{standalone: true}"
+      >
+    </fieldset>
+    <fieldset>
+      <label>Senha</label>
+      <input
+        type="password"
+        [(ngModel)]="login.senha"
+        #senha="ngModel"
+        [ngModelOptions]="{standalone: true}"
+      >
+    </fieldset>
+    <div class="botoes">
+      <button type="button" class="entrar" (click)="entrar()">Entrar</button>
+      <button type="button" class="cadastrar" (click)="cadastrar()">Cadastrar</button>
+    </div>
+  </form>
+</div>

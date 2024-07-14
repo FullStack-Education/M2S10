@@ -1,0 +1,18 @@
+
+
+.voltar {
+  position: absolute;
+  bottom: 24px;
+  left: 32px;
+  border: 1px solid #cae5fd;
+  border-radius: 4px;
+  background-color: #2f9cfb;
+  color: white;
+  height: 42px;
+  width: 125px;
+
+  &:hover {
+    cursor: pointer;
+    scale: 1.1;
+  }
+}

@@ -1,0 +1,33 @@
+<div class="container-calculadora">
+  <div class="calculadora">
+    <div class="visor">
+      <span>{{ expressao }}</span>
+    </div>
+    <div class="teclado">
+      <div class="fileira">
+        <button class="numerico" (click)="tratarSelecao('7')">7</button>
+        <button class="numerico" (click)="tratarSelecao('8')">8</button>
+        <button class="numerico" (click)="tratarSelecao('9')">9</button>
+        <button class="operacao" (click)="tratarSelecao('/')">/</button>
+      </div>
+      <div class="fileira">
+        <button class="numerico" (click)="tratarSelecao('4')">4</button>
+        <button class="numerico" (click)="tratarSelecao('5')">5</button>
+        <button class="numerico" (click)="tratarSelecao('6')">6</button>
+        <button class="operacao" (click)="tratarSelecao('*')">X</button>
+      </div>
+      <div class="fileira">
+        <button class="numerico" (click)="tratarSelecao('1')">1</button>
+        <button class="numerico" (click)="tratarSelecao('2')">2</button>
+        <button class="numerico" (click)="tratarSelecao('3')">3</button>
+        <button class="operacao" (click)="tratarSelecao('+')">+</button>
+      </div>
+      <div class="fileira">
+        <button class="acao" (click)="limpar()">C</button>
+        <button class="numerico" (click)="tratarSelecao('0')">0</button>
+        <button class="acao" (click)="calcularResultado()">=</button>
+        <button class="operacao" (click)="tratarSelecao('-')">-</button>
+      </div>
+    </div>
+  </div>
+</div>

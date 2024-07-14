@@ -1,0 +1,40 @@
+<div class="cadastro-usuario">
+  <!-- Exemplo formulário Reactive Forms -->
+  <form [formGroup]="formCadastro">
+    <fieldset>
+      <label>Nome Completo *</label>
+      <input type="text" formControlName="nome">
+      <span *ngIf="(formCadastro.controls['nome'].dirty || formCadastro.controls['nome'].touched) &&
+        formCadastro.controls['nome'].errors?.['required']" appLabelErro>Nome obrigatório</span>
+      <span *ngIf="(formCadastro.controls['nome'].dirty || formCadastro.controls['nome'].touched) &&
+        formCadastro.controls['nome'].errors?.['nomeCompleto']" appLabelErro>Nome inválido</span>
+    </fieldset>
+    <fieldset>
+      <label>CPF *</label>
+      <input type="text" formControlName="cpf">
+      <span *ngIf="(formCadastro.controls['cpf'].dirty || formCadastro.controls['cpf'].touched) &&
+        formCadastro.controls['cpf'].errors?.['required']" appLabelErro>CPF obrigatório</span>
+    </fieldset>
+    <fieldset>
+      <label>E-mail *</label>
+      <input type="mail" formControlName="email">
+      <span *ngIf="(formCadastro.controls['email'].dirty || formCadastro.controls['email'].touched) &&
+        formCadastro.controls['email'].errors?.['required']" appLabelErro>Email obrigatório</span>
+    </fieldset>
+    <fieldset>
+      <label>Celular *</label>
+      <input type="text" formControlName="celular">
+      <span *ngIf="(formCadastro.controls['celular'].dirty || formCadastro.controls['celular'].touched) &&
+        formCadastro.controls['celular'].errors?.['required']" appLabelErro>Celular obrigatório</span>
+    </fieldset>
+    <div class="botoes">
+      <button
+        type="button"
+        class="cadastrar"
+        (click)="submitForm()"
+      >
+        {{ idUsuario ? 'Editar' : 'Cadastrar' }}
+      </button>
+    </div>
+  </form>
+</div>

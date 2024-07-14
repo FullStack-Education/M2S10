@@ -1,0 +1,25 @@
+<div class="conversor">
+  <div class="card-conversor">
+    <div id="campos">
+      <fieldset>
+        <label for="">Valor</label>
+        <input type="number" [(ngModel)]="valorTemperatura">
+      </fieldset>
+
+      <fieldset>
+        <label for="">Tipo</label>
+        <select name="" id="" [(ngModel)]="opcaoSelecionada">
+          <option value="F">Celsius para Fahrenheit</option>
+          <option value="C">Fahrenheit para Celsius</option>
+        </select>
+      </fieldset>
+    </div>
+    <div class="resultado" *ngIf="(valorTemperatura || +valorTemperatura === 0) && opcaoSelecionada">
+      <span>
+        A conversão do valor {{valorTemperatura}} <br> de
+        {{ opcaoSelecionada === 'F' ? 'Celsius para Fahrenheit' : 'Fahrenheit para Celsius' }}
+        é {{ valorTemperatura | conversorTemperatura : opcaoSelecionada }}
+      </span>
+    </div>
+  </div>
+</div>

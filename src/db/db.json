@@ -1,0 +1,39 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "Eduardo Silva",
+      "cpf": "12345678909",
+      "email": "mail@mail.com",
+      "celular": "15959595959"
+    },
+    {
+      "id": "2",
+      "nome": "André Silva",
+      "cpf": "42756456452",
+      "email": "teste@mail.com",
+      "celular": "158686868686"
+    },
+    {
+      "id": "3",
+      "nome": "Luis Silva",
+      "cpf": "98765432105",
+      "email": "teste@teste.com",
+      "celular": "157676767676"
+    },
+    {
+      "id": "573a",
+      "nome": "Nome Completo",
+      "cpf": "12387945685",
+      "email": "email@mail.com",
+      "celular": "15949494949"
+    },
+    {
+      "nome": "José Silva",
+      "cpf": "4567893154",
+      "email": "email@mail.com",
+      "celular": "15949494949",
+      "id": "11fb"
+    }
+  ]
+}

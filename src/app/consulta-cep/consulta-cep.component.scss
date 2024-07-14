@@ -1,0 +1,20 @@
+.cadastro-usuario {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  form {
+    border: 1px solid #cae5fd;
+    box-shadow: 9px 7px 5px 0px #bad6ee;
+    border-radius: 6px;
+    padding: 32px 24px;
+
+    fieldset {
+      border: none;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  form {
+    border: 1px solid #cae5fd;
+    box-shadow: 9px 7px 5px 0px #bad6ee;
+    border-radius: 6px;
+    padding: 32px 24px;
+
+    fieldset {
+      border: none;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .botoes {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 18px;
+
+      button {
+        width: 75px;
+        height: 32px;
+        border-radius: 4px;
+
+        &:hover {
+          cursor: pointer;
+          scale: 1.1;
+        }
+      }
+
+      .entrar {
+        border: 2px solid #bad6ee;
+        background-color: transparent;
+      }
+
+      .cadastrar {
+        border: none;
+        background-color: #bad6ee;
+      }
+    }
+  }
+}

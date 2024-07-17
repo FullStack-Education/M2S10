@@ -5,6 +5,9 @@
     <span>{{ usuarioLogado?.email }}</span>
     <div class="notificacao">
       <img src="assets/images/notificacao.png" alt="">
+      <div *ngIf="contador" class="contador">
+        {{ contador }}
+      </div>
     </div>
   </div>
 </header>

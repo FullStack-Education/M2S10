@@ -4,6 +4,18 @@ header {
   height: 10vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   color: white;
+
+  .usuario {
+    display: flex;
+
+    .notificacao {
+      margin-left: 8px;
+
+      img {
+        height: 20px;
+      }
+    }
+  }
 }

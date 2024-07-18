@@ -1,35 +1,30 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { CalculadoraComponent } from './calculadora/calculadora.component';
-import { LoginComponent } from './login/login.component';
-import { CadastroUsuarioComponent } from './cadastro-usuario/cadastro-usuario.component';
-import { UsuariosComponent } from './usuarios/usuarios.component';
-import { ConversorComponent } from './conversor/conversor.component';
+
 import { usuarioLogadoGuard } from './shared/guards/usuario-logado.guard';
-import { ConsultaCepComponent } from './consulta-cep/consulta-cep.component';
 
 export const routes: Routes = [
   {
     path: 'home',
-    component: HomeComponent,
+    loadComponent: () => import('./home/home.component').then(c => c.HomeComponent),
     canActivate: [usuarioLogadoGuard]
   },
   {
     path: 'calculadora',
-    component: CalculadoraComponent,
+    loadComponent: () => import('./calculadora/calculadora.component').then(c => c.CalculadoraComponent),
     canActivate: [usuarioLogadoGuard]
   },
   {
     path: 'login',
-    component: LoginComponent
+    loadComponent: () => import('./login/login.component').then(c => c.LoginComponent),
   },
   {
     path: 'consulta-cep',
-    component: ConsultaCepComponent
+    loadComponent: () => import('./consulta-cep/consulta-cep.component').then(c => c.ConsultaCepComponent),
+    canActivate: [usuarioLogadoGuard]
   },
   {
     path: 'conversor',
-    component: ConversorComponent,
+    loadComponent: () => import('./conversor/conversor.component').then(c => c.ConversorComponent),
     canActivate: [usuarioLogadoGuard]
   },
   {
@@ -38,15 +33,15 @@ export const routes: Routes = [
     children: [
       {
         path: '',
-        component: UsuariosComponent
+        loadComponent: () => import('./usuarios/usuarios.component').then(c => c.UsuariosComponent),
       },
       {
         path: 'cadastro-usuario',
-        component: CadastroUsuarioComponent
+        loadComponent: () => import('./cadastro-usuario/cadastro-usuario.component').then(c => c.CadastroUsuarioComponent),
       },
       {
         path: 'cadastro-usuario/:id',
-        component: CadastroUsuarioComponent
+        loadComponent: () => import('./cadastro-usuario/cadastro-usuario.component').then(c => c.CadastroUsuarioComponent),
       }
     ]
   },

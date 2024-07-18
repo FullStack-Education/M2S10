@@ -1,11 +1,12 @@
 import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ContadorService } from '../../services/contador.service';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-card',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule, NgOptimizedImage],
   templateUrl: './card.component.html',
   styleUrl: './card.component.scss'
 })

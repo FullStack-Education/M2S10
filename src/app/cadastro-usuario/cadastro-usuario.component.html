@@ -2,8 +2,8 @@
   <!-- Exemplo formulário Reactive Forms -->
   <form [formGroup]="formCadastro">
     <fieldset>
-      <label>Nome Completo *</label>
-      <input type="text" formControlName="nome">
+      <label for="nome">Nome Completo *</label>
+      <input name="nome" type="text" formControlName="nome">
       <span *ngIf="(formCadastro.controls['nome'].dirty || formCadastro.controls['nome'].touched) &&
         formCadastro.controls['nome'].errors?.['required']" appLabelErro>Nome obrigatório</span>
       <span *ngIf="(formCadastro.controls['nome'].dirty || formCadastro.controls['nome'].touched) &&

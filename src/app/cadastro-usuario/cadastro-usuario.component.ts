@@ -61,14 +61,14 @@ export class CadastroUsuarioComponent implements OnInit {
   }
 
   cadastrar(usuario: UsuarioInterface) {
-    this.usuarioService.postUsuario(usuario).subscribe((retorno) => {
+    this.usuarioService.postUsuario(usuario).subscribe(() => {
       window.alert('Usuário criado com sucesso');
     });
   }
 
   editar(usuario: UsuarioInterface) {
     usuario.id = this.idUsuario!;
-    this.usuarioService.putUsuario(usuario).subscribe((retorno) => {
+    this.usuarioService.putUsuario(usuario).subscribe(() => {
       window.alert('Usuário editado com sucesso');
     });
   }

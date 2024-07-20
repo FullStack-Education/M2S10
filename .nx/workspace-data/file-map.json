@@ -1,0 +1,354 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.5.1",
+  "deps": {
+    "@angular/animations": "^18.0.0",
+    "@angular/common": "^18.0.0",
+    "@angular/compiler": "^18.0.0",
+    "@angular/core": "^18.0.0",
+    "@angular/forms": "^18.0.0",
+    "@angular/platform-browser": "^18.0.0",
+    "@angular/platform-browser-dynamic": "^18.0.0",
+    "@angular/router": "^18.0.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.3",
+    "@angular-devkit/build-angular": "^18.0.5",
+    "@angular/cli": "^18.0.5",
+    "@angular/compiler-cli": "^18.0.0",
+    "@types/jasmine": "~5.1.0",
+    "angular-eslint": "18.1.0",
+    "eslint": "^9.6.0",
+    "jasmine-core": "~5.1.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "typescript": "~5.4.2",
+    "typescript-eslint": "8.0.0-alpha.38"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {},
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "17241496168097493888"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "10175894702052279752"
+      },
+      {
+        "file": "README.md",
+        "hash": "2571891966611386207"
+      },
+      {
+        "file": "angular.json",
+        "hash": "18397536535770358988"
+      },
+      {
+        "file": "eslint.config.js",
+        "hash": "2274627192338089404"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "5197454324319068363"
+      },
+      {
+        "file": "package.json",
+        "hash": "4990444891253725009"
+      },
+      {
+        "file": "public/favicon.ico",
+        "hash": "3988961587069885523"
+      },
+      {
+        "file": "src/app/app.component.html",
+        "hash": "9413231135048594581"
+      },
+      {
+        "file": "src/app/app.component.scss",
+        "hash": "3608743874444716304"
+      },
+      {
+        "file": "src/app/app.component.spec.ts",
+        "hash": "5388107194482793637"
+      },
+      {
+        "file": "src/app/app.component.ts",
+        "hash": "16301283242042127108"
+      },
+      {
+        "file": "src/app/app.config.ts",
+        "hash": "16277097643801439428"
+      },
+      {
+        "file": "src/app/app.routes.ts",
+        "hash": "12829978387235014329"
+      },
+      {
+        "file": "src/app/cadastro-usuario/cadastro-usuario.component.html",
+        "hash": "17599900413598300162"
+      },
+      {
+        "file": "src/app/cadastro-usuario/cadastro-usuario.component.scss",
+        "hash": "5575351983751761170"
+      },
+      {
+        "file": "src/app/cadastro-usuario/cadastro-usuario.component.spec.ts",
+        "hash": "9544270492585465717"
+      },
+      {
+        "file": "src/app/cadastro-usuario/cadastro-usuario.component.ts",
+        "hash": "9344349303903424232"
+      },
+      {
+        "file": "src/app/calculadora/calculadora.component.html",
+        "hash": "841516505640006552"
+      },
+      {
+        "file": "src/app/calculadora/calculadora.component.scss",
+        "hash": "17427544299442608513"
+      },
+      {
+        "file": "src/app/calculadora/calculadora.component.spec.ts",
+        "hash": "2798919436139634941"
+      },
+      {
+        "file": "src/app/calculadora/calculadora.component.ts",
+        "hash": "2415818485104190085"
+      },
+      {
+        "file": "src/app/consulta-cep/consulta-cep.component.html",
+        "hash": "9034573512803908370"
+      },
+      {
+        "file": "src/app/consulta-cep/consulta-cep.component.scss",
+        "hash": "17264849491476812297"
+      },
+      {
+        "file": "src/app/consulta-cep/consulta-cep.component.spec.ts",
+        "hash": "14538848678885386733"
+      },
+      {
+        "file": "src/app/consulta-cep/consulta-cep.component.ts",
+        "hash": "2215998059774965912"
+      },
+      {
+        "file": "src/app/conversor/conversor.component.html",
+        "hash": "2066694600853117660"
+      },
+      {
+        "file": "src/app/conversor/conversor.component.scss",
+        "hash": "6918247394451926908"
+      },
+      {
+        "file": "src/app/conversor/conversor.component.spec.ts",
+        "hash": "12573338165292735700"
+      },
+      {
+        "file": "src/app/conversor/conversor.component.ts",
+        "hash": "14737405401890244351"
+      },
+      {
+        "file": "src/app/home/home.component.html",
+        "hash": "18103029782308985480"
+      },
+      {
+        "file": "src/app/home/home.component.scss",
+        "hash": "2767205301487912324"
+      },
+      {
+        "file": "src/app/home/home.component.spec.ts",
+        "hash": "2683587061765069593"
+      },
+      {
+        "file": "src/app/home/home.component.ts",
+        "hash": "4148335933453563499"
+      },
+      {
+        "file": "src/app/login/login.component.html",
+        "hash": "7573441641968863726"
+      },
+      {
+        "file": "src/app/login/login.component.scss",
+        "hash": "3908490273608473912"
+      },
+      {
+        "file": "src/app/login/login.component.spec.ts",
+        "hash": "10730385221617188498"
+      },
+      {
+        "file": "src/app/login/login.component.ts",
+        "hash": "7335903200644443047"
+      },
+      {
+        "file": "src/app/shared/components/card/card.component.html",
+        "hash": "7019093878630661833"
+      },
+      {
+        "file": "src/app/shared/components/card/card.component.scss",
+        "hash": "12220815700053656294"
+      },
+      {
+        "file": "src/app/shared/components/card/card.component.spec.ts",
+        "hash": "6860051151643592360"
+      },
+      {
+        "file": "src/app/shared/components/card/card.component.ts",
+        "hash": "11665417453876924752"
+      },
+      {
+        "file": "src/app/shared/components/header/header.component.html",
+        "hash": "5299222459774860822"
+      },
+      {
+        "file": "src/app/shared/components/header/header.component.scss",
+        "hash": "15630981083672106207"
+      },
+      {
+        "file": "src/app/shared/components/header/header.component.spec.ts",
+        "hash": "3248092532361185820"
+      },
+      {
+        "file": "src/app/shared/components/header/header.component.ts",
+        "hash": "10163710756696289855"
+      },
+      {
+        "file": "src/app/shared/directives/label-erro.directive.spec.ts",
+        "hash": "8363789909706533602"
+      },
+      {
+        "file": "src/app/shared/directives/label-erro.directive.ts",
+        "hash": "666557349377075927"
+      },
+      {
+        "file": "src/app/shared/guards/usuario-logado.guard.spec.ts",
+        "hash": "13356575754021127937"
+      },
+      {
+        "file": "src/app/shared/guards/usuario-logado.guard.ts",
+        "hash": "8708013275236676928"
+      },
+      {
+        "file": "src/app/shared/interfaces/usuario.interface.ts",
+        "hash": "12880866769231545793"
+      },
+      {
+        "file": "src/app/shared/pipes/conversor-temperatura.pipe.spec.ts",
+        "hash": "638238673422764438"
+      },
+      {
+        "file": "src/app/shared/pipes/conversor-temperatura.pipe.ts",
+        "hash": "10806889737983657178"
+      },
+      {
+        "file": "src/app/shared/services/cep.service.spec.ts",
+        "hash": "11063179750280998966"
+      },
+      {
+        "file": "src/app/shared/services/cep.service.ts",
+        "hash": "5983593602405573951"
+      },
+      {
+        "file": "src/app/shared/services/contador.service.spec.ts",
+        "hash": "6863338188425573377"
+      },
+      {
+        "file": "src/app/shared/services/contador.service.ts",
+        "hash": "7215306819604802000"
+      },
+      {
+        "file": "src/app/shared/services/login.service.spec.ts",
+        "hash": "9236179103519150672"
+      },
+      {
+        "file": "src/app/shared/services/login.service.ts",
+        "hash": "8217085118677756773"
+      },
+      {
+        "file": "src/app/shared/services/usuario.service.spec.ts",
+        "hash": "17469944932166283755"
+      },
+      {
+        "file": "src/app/shared/services/usuario.service.ts",
+        "hash": "851085850078964608"
+      },
+      {
+        "file": "src/app/shared/validators/nome-completo.validator.ts",
+        "hash": "2137674571564657048"
+      },
+      {
+        "file": "src/app/usuarios/usuarios.component.html",
+        "hash": "5027747266037672537"
+      },
+      {
+        "file": "src/app/usuarios/usuarios.component.scss",
+        "hash": "621202475344981839"
+      },
+      {
+        "file": "src/app/usuarios/usuarios.component.spec.ts",
+        "hash": "570030843110851342"
+      },
+      {
+        "file": "src/app/usuarios/usuarios.component.ts",
+        "hash": "18386531659804513510"
+      },
+      {
+        "file": "src/assets/images/atividade-1.png",
+        "hash": "13074000059069606258"
+      },
+      {
+        "file": "src/assets/images/atividade-2.png",
+        "hash": "6810831394359596604"
+      },
+      {
+        "file": "src/assets/images/atividade-3.png",
+        "hash": "4274174904844256679"
+      },
+      {
+        "file": "src/assets/images/atividade-4.png",
+        "hash": "6478327498960063510"
+      },
+      {
+        "file": "src/assets/images/notificacao.png",
+        "hash": "3205521305319965497"
+      },
+      {
+        "file": "src/assets/images/user.png",
+        "hash": "5264190465952682375"
+      },
+      {
+        "file": "src/db/db.json",
+        "hash": "529969680674107735"
+      },
+      {
+        "file": "src/index.html",
+        "hash": "13461374545143088429"
+      },
+      {
+        "file": "src/main.ts",
+        "hash": "4169901790405087765"
+      },
+      {
+        "file": "src/styles.scss",
+        "hash": "13081421677051393481"
+      },
+      {
+        "file": "tsconfig.app.json",
+        "hash": "14560978611694835822"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "537034293907716874"
+      },
+      {
+        "file": "tsconfig.spec.json",
+        "hash": "11023685540591620072"
+      }
+    ]
+  }
+}
